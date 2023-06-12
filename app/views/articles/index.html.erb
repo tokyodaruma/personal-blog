@@ -1,12 +1,20 @@
 <h1>Hello, old friend!</h1>
 
-<ul>
-  <% @articles.each do |article| %>
-    <li>
-      <%= link_to article.title, article %>
-      <%= "#{article.body.split(' ').first(3).join(' ')}..." %>
-    </li>
-  <% end %>
-</ul>
+<div class="container">
+  <ul>
+    <% @articles.each do |article| %>
+    <div class="card-article">
+        <li>
+          <div class="card-article-header">
+            <%= link_to article.title, article %>
+          </div>
+          <div class="card-article-body">
+            <%= "#{article.body.split(' ').first(3).join(' ')}..." %>
+          </div>
+        </li>
+    </div>
+    <% end %>
+  </ul>
+</div>
 
 <%= link_to "New Article", new_article_path %>
