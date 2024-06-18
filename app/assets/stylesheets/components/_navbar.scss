@@ -1,0 +1,22 @@
+.navbar {
+  background: white;
+  padding: 4px 4px 4px 4px;
+  margin: 2px;
+  float: right;
+  width: 200px;
+}
+
+.navbar-items {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-items li {
+  list-style: none;
+}
+
+.navbar-items a {
+  text-decoration: none;
+}
